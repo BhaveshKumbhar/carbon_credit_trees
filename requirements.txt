@@ -1,0 +1,20 @@
+# Data collection
+requests==2.32.3
+
+# Image quality checks (blur detection) — optional but recommended
+opencv-python-headless==4.10.0.84
+
+# Model training / inference (PyTorch with CUDA support — install via the
+# command below instead of a plain `pip install torch`, so you get the GPU
+# build rather than CPU-only):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+torch==2.4.1
+torchvision==0.19.1
+
+# Data handling / evaluation
+numpy==1.26.4
+scikit-learn==1.5.1
+pillow==10.4.0
+
+# Web app
+streamlit==1.38.0

@@ -1,0 +1,55 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+
+# ===== Virtual environment =====
+.venv/
+venv/
+env/
+
+# ===== Secrets =====
+# FLICKR_API_KEY and anything similar should never be committed
+.env
+*.env
+
+# ===== IDE / editor =====
+.vscode/
+.idea/
+*.swp
+
+# ===== OS files =====
+.DS_Store
+Thumbs.db
+
+# ===== Project data (large — do not commit) =====
+# Thousands of images; regenerate locally via download_tree_images_v6.py
+# + download_negative_images.py instead of committing them.
+tree_images/
+corrupted_flagged/
+tree_images_blur_flagged/
+image_metadata_tier1.csv
+
+# ===== Trained model artifacts =====
+# Regenerable via train_species_classifier_torch.py + compute_ood_reference.py.
+# Uncomment the lines below to exclude them from the repo (recommended —
+# GitHub isn't a great home for binary model weights). If you'd rather
+# commit the final model so the app runs immediately after a clone, delete
+# these two lines instead of leaving them uncommented.
+tree_species_classifier_final.pt
+ood_reference.pt
+
+# class_names.txt is small and needed for identify_tree.py to run — keep it
+# tracked; do NOT add it here.
+
+# ===== Streamlit =====
+.streamlit/secrets.toml
+
+# ===== Jupyter (if you use notebooks for exploration) =====
+.ipynb_checkpoints/
+
+# ===== Misc =====
+*.log
+*.tmp

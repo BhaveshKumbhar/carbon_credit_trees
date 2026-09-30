@@ -1,0 +1,11 @@
+species_id,common_name,scientific_name,hindi_name,category,agroforestry_program_relevance,indicative_value_range_inr_per_tonne,maturity_years_for_carbon_relevance,native_status,gov_resource_name,gov_resource_url,notes
+SP001,Eucalyptus,Eucalyptus tereticornis,Nilgiri,fast_growing_timber,commonly_registered,1400-2000,5-7,introduced,Green Credit Programme (MoEFCC),https://www.moefcc-gcp.in/,Widely used in bund plantations; fast growth favored by aggregators
+SP002,Subabul,Leucaena leucocephala,Subabul,fast_growing_timber,commonly_registered,1400-2000,3-5,introduced,Green Credit Programme (MoEFCC),https://www.moefcc-gcp.in/,Also used as fodder/green manure; short rotation
+SP003,Shisham,Dalbergia sissoo,Shisham,fast_growing_timber,commonly_registered,1500-2000,8-10,native,Green Credit Programme (MoEFCC),https://www.moefcc-gcp.in/,High timber value alongside carbon income
+SP004,Poplar,Populus deltoides,Poplar,fast_growing_timber,commonly_registered,1500-2000,6-8,introduced,Green Credit Programme (MoEFCC),https://www.moefcc-gcp.in/,Strong in Punjab/UP agroforestry belts — regional; not pan-India
+SP005,Casuarina,Casuarina equisetifolia,Casuarina,fast_growing_timber,commonly_registered,1400-1900,4-6,introduced,Green Credit Programme (MoEFCC),https://www.moefcc-gcp.in/,Coastal states; also used in soil stabilization
+SP007,Teak,Tectona grandis,Sagwan,fast_growing_timber,sometimes_registered,1500-2200,15-20,native,Green Credit Programme (MoEFCC),https://www.moefcc-gcp.in/,High national commercial + carbon value
+SP008,Bamboo,Bambusa bambos,Bans,fast_growing_timber,commonly_registered,1600-2200,3-5,native,Green Credit Programme (MoEFCC),https://www.moefcc-gcp.in/,Fast carbon sequestration; counted under agroforestry in several state programs
+SP013,Mango,Mangifera indica,Aam,fruit,commonly_registered,1400-2000,8-10,native,Green Credit Programme (MoEFCC),https://www.moefcc-gcp.in/,Explicitly named in Budget 2026 agroforestry guidance
+SP021,Jackfruit,Artocarpus heterophyllus,Kathal,fruit,sometimes_registered,1400-1900,8-10,native,Green Credit Programme (MoEFCC),https://www.moefcc-gcp.in/,Large biomass tree; good carbon storage potential
+SP027,Neem,Azadirachta indica,Neem,native_multipurpose,commonly_registered,1400-1900,8-10,native,Green Credit Programme (MoEFCC),https://www.moefcc-gcp.in/,Extremely widely planted; strong native multipurpose case
