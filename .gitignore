@@ -11,9 +11,10 @@ venv/
 env/
 
 # ===== Secrets =====
-# FLICKR_API_KEY and anything similar should never be committed
+# FLICKR_API_KEY, GEMINI_API_KEY and anything similar should never be committed
 .env
 *.env
+secrets.toml
 
 # ===== IDE / editor =====
 .vscode/
@@ -24,30 +25,30 @@ env/
 .DS_Store
 Thumbs.db
 
-# ===== Project data (large — do not commit) =====
-# Thousands of images; regenerate locally via download_tree_images_v6.py
-# + download_negative_images.py instead of committing them.
+# ===== Project data & heavy caches (large — do not commit) =====
+# Regenerate locally via scripts instead of committing
 tree_images/
 corrupted_flagged/
 tree_images_blur_flagged/
 image_metadata_tier1.csv
 
+# Feature cache files (heavy .npz embeddings)
+cache/
+cache_v2/
+*.npz
+
 # ===== Trained model artifacts =====
-# Regenerable via train_species_classifier_torch.py + compute_ood_reference.py.
-# Uncomment the lines below to exclude them from the repo (recommended —
-# GitHub isn't a great home for binary model weights). If you'd rather
-# commit the final model so the app runs immediately after a clone, delete
-# these two lines instead of leaving them uncommented.
+# Old v1 artifacts
 tree_species_classifier_final.pt
 ood_reference.pt
 
-# class_names.txt is small and needed for identify_tree.py to run — keep it
-# tracked; do NOT add it here.
+# Note: artifacts_v2/best_model.pt (~20KB) and artifacts_v2/ood_config.json (~4MB)
+# are tracked so the Streamlit app runs out-of-the-box on clone.
 
 # ===== Streamlit =====
 .streamlit/secrets.toml
 
-# ===== Jupyter (if you use notebooks for exploration) =====
+# ===== Jupyter =====
 .ipynb_checkpoints/
 
 # ===== Misc =====

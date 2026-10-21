@@ -1,0 +1,63 @@
+{
+  "backbone": "dinov2_vits14",
+  "feature_dim": 384,
+  "num_classes": 10,
+  "class_names": [
+    "SP001_Eucalyptus",
+    "SP002_Subabul",
+    "SP003_Shisham",
+    "SP004_Poplar",
+    "SP005_Casuarina",
+    "SP007_Teak",
+    "SP008_Bamboo",
+    "SP013_Mango",
+    "SP021_Jackfruit",
+    "SP027_Neem"
+  ],
+  "benchmark_summary": {
+    "LogisticRegression (C=1.0)": {
+      "top1_mean": 90.30000000000001,
+      "top1_std": 0.834332734052255,
+      "top3_mean": 97.89166666666667,
+      "top3_std": 0.7912718313646155
+    },
+    "LogisticRegression (C=10.0)": {
+      "top1_mean": 89.89166666666668,
+      "top1_std": 0.5813060008865093,
+      "top3_mean": 97.825,
+      "top3_std": 0.7394630183826338
+    },
+    "LinearSVC (Calibrated)": {
+      "top1_mean": 90.49166666666666,
+      "top1_std": 0.6221602151643371,
+      "top3_mean": 97.60833333333332,
+      "top3_std": 0.771272397477773
+    },
+    "Cosine Nearest Prototype": {
+      "top1_mean": 77.07499999999999,
+      "top1_std": 0.9425880448118487,
+      "top3_mean": 92.64166666666667,
+      "top3_std": 1.0634717778212166
+    },
+    "Neural Head (LayerNorm+Dropout)": {
+      "top1_mean": 91.51666666666667,
+      "top1_std": 0.6596505809054425,
+      "top3_mean": 98.45,
+      "top3_std": 0.6359594676112956
+    }
+  },
+  "best_model": "Neural Head (LayerNorm+Dropout)",
+  "best_top1_mean": 91.51666666666667,
+  "per_class_accuracy": {
+    "SP001_Eucalyptus": 94.33333333333334,
+    "SP002_Subabul": 94.16666666666667,
+    "SP003_Shisham": 90.25,
+    "SP004_Poplar": 89.08333333333334,
+    "SP005_Casuarina": 96.08333333333333,
+    "SP007_Teak": 91.75,
+    "SP008_Bamboo": 94.41666666666667,
+    "SP013_Mango": 90.33333333333333,
+    "SP021_Jackfruit": 88.5,
+    "SP027_Neem": 86.25
+  }
+}
